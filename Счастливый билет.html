@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="namber" id="one">
+    <input type="text" id="sign">
+    <input type="namber" id="two">
+    =
+    <span></span>
+    <br><br>
+    <Button onclick="go()">Посчитать</Button>
+    <Script>
+function go() {
+    let one = +document.querySelector("#one").value;
+    let two = +document.querySelector("#two").value;
+
+    let znak = document.querySelector("#znak").value;
+
+    let sum =" ";
+
+    else{
+    if(znak =="+")  {
+        sum = one + two;
+    }
+}
+    else{
+    if(znak =="-")  {
+        sum = one - two;
+    }
+}
+    else{
+    if(znak =="*")  {
+        sum = one * two;
+    }
+}
+else{
+    if(znak =="/")  {
+        sum = one / two;
+    }
+}
+document.querySelector("spen").textContent = sum;
+    </Script>
+</body>
+</html>
